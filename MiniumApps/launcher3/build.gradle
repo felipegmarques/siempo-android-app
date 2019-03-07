@@ -28,6 +28,9 @@ android {
         javaCompileOptions {
             annotationProcessorOptions {
                 includeCompileClasspath false
+                arguments = [
+                        "androidManifestFile": "$projectDir/src/main/AndroidManifest.xml".toString()
+                ]
             }
         }
     }
@@ -56,8 +59,8 @@ android {
         }
         beta {
             dimension "Siempo"
-            versionCode 12311
-            versionName "${0}.${1}.${6}.${0}"
+            versionCode 12312
+            versionName "${0}.${1}.${7}.${0}"
         }
     }
 
